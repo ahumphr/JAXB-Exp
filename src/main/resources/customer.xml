@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:customer xmlns:ns2="de.vogella.xml.jaxb.model" id="100">
+    <address>
+        <houseNumber>11</houseNumber>
+        <street>Highstreet</street>
+        <town>Bromborough</town>
+    </address>
+    <age>29</age>
+    <orders>
+        <orders>
+            <orderItem>Book 1</orderItem>
+        </orders>
+        <orders>
+            <orderItem>Book 2</orderItem>
+        </orders>
+    </orders>
+</ns2:customer>
