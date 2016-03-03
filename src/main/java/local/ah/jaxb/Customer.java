@@ -6,20 +6,21 @@ import java.util.List;
 import java.util.Optional;
 
 @XmlRootElement(namespace = "de.vogella.xml.jaxb.model")
+@XmlType(propOrder = {"name", "age", "address", "orders"})
 public class Customer {
 
-	String name;
-	int age;
-	int id;
-    Address address;
-    List<Order> orders;
+    private int id;
+    private int age;
+	private String name;
+    private Address address;
+    private List<Order> orders;
 
     public Customer() {
         this.orders =  new ArrayList<Order>();
     }
 
-    public Optional<String> getName() {
-		return Optional.of(name);
+    public String getName() {
+		return name;
 	}
 
 	@XmlElement
@@ -63,11 +64,13 @@ public class Customer {
     }
 
     @Override
-	public String toString() {
-		return "Customer{" +
-				"name='" + name + '\'' +
-				", age=" + age +
-				", id=" + id +
-				'}';
-	}
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", id=" + id +
+                ", address=" + address +
+                ", orders=" + orders +
+                '}';
+    }
 }

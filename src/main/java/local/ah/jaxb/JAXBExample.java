@@ -11,7 +11,7 @@ public class JAXBExample {
 
         Customer customer = new Customer();
         customer.setId(100);
-        customer.setName("mkyong");
+        customer.setName("Aiden");
         customer.setAge(29);
 
         Address address = new Address();

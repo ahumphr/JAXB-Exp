@@ -1,5 +1,6 @@
 package local.ah.jaxb;
 
+import javax.xml.bind.annotation.XmlAccessorOrder;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -28,5 +29,13 @@ public class Order {
 
     public void setOrderItem(String orderItem) {
         this.orderItem = orderItem;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId=" + orderId +
+                ", orderItem='" + orderItem + '\'' +
+                '}';
     }
 }

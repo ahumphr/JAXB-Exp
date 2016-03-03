@@ -40,4 +40,13 @@ public class Address {
     public void setTown(String town) {
         this.town = town;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", houseNumber=" + houseNumber +
+                ", town='" + town + '\'' +
+                '}';
+    }
 }
